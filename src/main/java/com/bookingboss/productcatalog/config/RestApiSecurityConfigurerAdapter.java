@@ -20,7 +20,7 @@ public class RestApiSecurityConfigurerAdapter extends WebSecurityConfigurerAdapt
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("user1").password(passwordEncoder().encode("user1Pass"))
+                .withUser("test").password(passwordEncoder().encode("test123"))
                 .authorities("ROLE_USER");
     }
 
